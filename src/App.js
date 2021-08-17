@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Person from "./components/Person"
+import Button from "./components/Button"
+import Greeting from "./components/Greeting"
+import Test from "./components/Test"
 
 function App() {
+  const props = {name: "hua quang huy", age: 20}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>this is the first app react 2022</h1>
+      <Person {...props} />
+      <Greeting/>
+      <Test/>
+      <Button/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
